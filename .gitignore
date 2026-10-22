@@ -1,0 +1,31 @@
+# gradle
+.gradle/
+build/
+out/
+classes/
+
+# idea / vscode
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.project
+.classpath
+
+# run directory
+run/
+runs/
+
+# os
+.DS_Store
+Thumbs.db
+
+# 本地依赖（体积大，不入库）
+libs/*.jar
+!libs/.gitkeep
+
+# 其它
+*.log
+src/generated/

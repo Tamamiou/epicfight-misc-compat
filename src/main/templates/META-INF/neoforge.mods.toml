@@ -1,0 +1,54 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="All Rights Reserved"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="Epic Fight Misc Compatibility"
+authors="Tamamiou"
+
+logoFile="logo.png"
+description='''
+史诗战斗杂项兼容：把"除匠魂以外"的史诗战斗兼容内容集中到一个模组里。
+
+* 内置数据包：Oreganized 护甲能力、农夫乐事武器动作等
+* 代码修复：数据包做不到的部分（例如 Oreganized 自定义护甲模型在战斗模式下的槽位错位）
+'''
+
+# ================== 依赖 ==================
+
+[[dependencies.${mod_id}]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="epicfight"
+type="required"
+versionRange="[21.14.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="oreganized"
+type="optional"
+versionRange="[5.0.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="farmersdelight"
+type="optional"
+versionRange="[1.21.1-1.3.0,)"
+ordering="AFTER"
+side="BOTH"
