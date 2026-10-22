@@ -1,0 +1,10 @@
+{
+  "type": "epicfight:trident",
+  "attributes": {
+    "common": {
+      "impact": 2.2,
+      "armor_negation": 12.0,
+      "max_strikes": 2
+    }
+  }
+}

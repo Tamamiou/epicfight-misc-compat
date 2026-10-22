@@ -10,13 +10,14 @@ authors="Tamamiou"
 
 logoFile="logo.png"
 description='''
-鍙茶瘲鎴樻枟鏉傞」鍏煎锛氭妸澶氫釜妯＄粍鐨勬鍣ㄤ笌鎶ょ敳鎺ュ叆 Epic Fight銆?
-* 鍐呯疆鏁版嵁鍖咃細鐏惧彉鐨勬鍣ㄥ姩浣滀笌鎶ょ敳鑳藉姏銆佷簳鐒舵湁鐭跨殑鎶ょ敳銆佸啘澶箰浜嬪強鍏堕檮灞炵殑鍒€
-* 浠ｇ爜淇锛氭暟鎹寘鍋氫笉鍒扮殑閮ㄥ垎锛堣嚜瀹氫箟鎶ょ敳妯″瀷鍦ㄦ垬鏂楁ā寮忎笅鐨勬Ы浣嶉敊浣嶏級
-* 杞仈鍔細妫€娴嬪埌澶滃箷锛圢ightFall锛夋椂锛岄儴鍒嗘鍣ㄨ嚜鍔ㄥ鐢ㄥ叾鍔ㄤ綔涓庣矑瀛愮壒鏁堬紱鏈畨瑁呭垯鍥為€€鍒?Epic Fight 鍘熺敓鍔ㄤ綔
+史诗战斗杂项兼容：把多个模组的武器与护甲接入 Epic Fight。
+
+* 内置数据包：灾变的武器动作与护甲能力、井然有矿的护甲、农夫乐事及其附属的刀
+* 代码修复：数据包做不到的部分（自定义护甲模型在战斗模式下的槽位错位与贴图修正）
+* 软联动：检测到夜幕（NightFall）时，部分武器自动套用其动作与粒子特效；未安装则回退到 Epic Fight 原生动作
 '''
 
-# ================== 蹇呴渶渚濊禆 ==================
+# ================== 必需依赖 ==================
 
 [[dependencies.${mod_id}]]
 modId="neoforge"
@@ -39,17 +40,24 @@ versionRange="[21.14.0,)"
 ordering="NONE"
 side="BOTH"
 
-# ================== 鍙€夎仈鍔紙鏈畨瑁呮椂瀵瑰簲鏁版嵁涓嶇敓鏁堬紝涓嶅奖鍝嶅惎鍔級 ==================
+# ================== 可选联动（未安装时对应数据不生效，不影响启动） ==================
 
 [[dependencies.${mod_id}]]
-modId="oreganized"
+modId="farmersdelight"
 type="optional"
 versionRange="*"
 ordering="AFTER"
 side="BOTH"
 
 [[dependencies.${mod_id}]]
-modId="farmersdelight"
+modId="farmers_spell"
+type="optional"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="kaleidoscope_nether"
 type="optional"
 versionRange="*"
 ordering="AFTER"

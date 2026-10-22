@@ -1,6 +1,6 @@
 # Epic Fight Misc Compatibility
 
-把多个模组的武器与护甲接入 Epic Fight（史诗战斗）的兼容模组。
+把其他模组的武器与护甲接入 Epic Fight（史诗战斗）的兼容模组。
 
 - **唯一的硬依赖是 Epic Fight**：其余模组全部是可选的软联动，不装也能正常启动。
 - 兼容数据直接打包在 jar 内，玩家不需要额外安装数据包。
@@ -12,18 +12,10 @@
 | 模组 | 内容 |
 |---|---|
 | 灾变（Cataclysm） | 33 件武器动作、14 件护甲能力（韧性 / 重量） |
-| 井然有矿（Oreganized） | 琥珀金 / 银质护甲的护甲能力 |
 | 农夫乐事（Farmer's Delight） | 刀、煎锅、西瓜冰棒等武器动作 |
 | 农夫乐事附属 | 樱途旅事、暮色风味乐事、末地乐事、血族乐事、借出乐事的 21 把刀 |
-
-### 代码修复
-
-**井然有矿的护甲在战斗模式下槽位错位**（护腿像头盔、靴子像胸甲）。
-
-- 与数据包无关，删掉所有数据包仍然存在；
-- 原因：Oreganized 的 `ElectrumArmorModel` / `SilverArmorModel` 是自带 `HumanoidModel`，不会按装备槽隐藏其它部位，Epic Fight 转成 `SkinnedMesh` 时会保留全部几何；
-- 修法：用 `WearableItemLayer.putModel(itemId, Meshes.<slot>.get())` 为这些物品显式登记 Epic Fight 自带的网格；
-- 代价：这些护甲在战斗模式下改用 Epic Fight 的默认造型，贴图仍是 Oreganized 自己的。
+| 法术与法术书（Farmer's Spell 'n Spellbook） | 4 把刀、汤勺、鸢尾叉、暮光刀锋、魔爪 |
+| 森罗厨房：下界（Kaleidoscope Nether） | 原始菜刀、吹箭筒 |
 
 ### 软联动：夜幕（NightFall）
 
@@ -39,7 +31,7 @@
 | 潮汐之爪 + 三款 Gauntlet | `efn:beastclaw` |
 | Brontes / Ceraunus / Astrape | `efn:meenlance` |
 
-未安装夜幕时，这些武器的夜幕动作组不生效，由模组内置的同名预设回退到 Epic Fight 原生动作（拳套 / 巨剑 / 镰刀 / 长矛），不会退化成原版攻击。
+未安装夜幕时，这些武器由模组内置的同名预设回退到 Epic Fight 原生动作（拳套 / 巨剑 / 镰刀 / 长矛），不会退化成原版攻击。
 
 ## 构建
 
@@ -58,7 +50,7 @@ set JAVA_HOME=C:\Program Files\Java\java21
 | 模组 | 类型 |
 |---|---|
 | Epic Fight | 必需 `[21.14.0,)` |
-| 井然有矿 / 农夫乐事 / 灾变 / 夜幕 / AAA Particles | 可选 |
+| 农夫乐事 / 法术与法术书 / 森罗厨房：下界 / 灾变 / 夜幕 / AAA Particles | 可选 |
 
 ## 许可
 
