@@ -1,10 +1,10 @@
 {
-  "type": "efn:exsiliumgladius",
+  "type": "epicfight:greatsword",
   "attributes": {
-    "common": {
-      "impact": 2.0,
-      "armor_negation": 40.0,
-      "max_strikes": 5
+    "two_hand": {
+      "impact": 3.2,
+      "armor_negation": 22.0,
+      "max_strikes": 3
     }
   }
 }

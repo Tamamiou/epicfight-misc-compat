@@ -36,15 +36,13 @@ public final class WeaponPresetFallback {
             Map<ResourceLocation, Function<Item, CapabilityItem.Builder<?>>> types =
                     (Map<ResourceLocation, Function<Item, CapabilityItem.Builder<?>>>) (Map<?, ?>) event.getTypeEntry();
 
-            fallback(types, "efn:thornwheel", EpicFightItemCapabilityPresets.FIST);
             fallback(types, "efn:beastclaw", EpicFightItemCapabilityPresets.FIST);
             fallback(types, "efn:ruinsgreatsword", EpicFightItemCapabilityPresets.GREATSWORD);
-            fallback(types, "efn:exsiliumgladius", EpicFightItemCapabilityPresets.GREATSWORD);
             fallback(types, "efn:broadblade", EpicFightItemCapabilityPresets.GREATSWORD);
             fallback(types, "efn:crescentmoon", EpicFightItemCapabilityPresets.HOE);
             fallback(types, "efn:meenlance", EpicFightItemCapabilityPresets.SPEAR);
 
-            EpicFightMisc.LOGGER.info("[Epic Fight Misc] NightFall not found, registered 7 fallback weapon presets");
+            EpicFightMisc.LOGGER.info("[Epic Fight Misc] NightFall not found, registered 5 fallback weapon presets");
         });
     }
 

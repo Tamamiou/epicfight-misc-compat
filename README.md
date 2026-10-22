@@ -5,13 +5,20 @@
 - **唯一的硬依赖是 Epic Fight**：其余模组全部是可选的软联动，不装也能正常启动。
 - 兼容数据直接打包在 jar 内，玩家不需要额外安装数据包。
 
+> ## ⚠️ 测试阶段
+>
+> **灾变（Cataclysm）兼容目前处于测试阶段**，武器动作、攻击判定、右键技能等数值还在调整，
+> 可能出现动作错位、特效缺失甚至崩溃。
+>
+> 遇到任何 BUG 请提交给我（附上物品名、现象和 `crash-report` / `latest.log`），我会尽快修。
+
 ## 功能
 
 ### 内置数据包
 
 | 模组 | 内容 |
 |---|---|
-| 灾变（Cataclysm） | 33 件武器动作、14 件护甲能力（韧性 / 重量） |
+| 灾变（Cataclysm） | 33 件武器动作、14 件护甲能力（韧性 / 重量）；碎肉机与焚化者用巨剑动作，右键保留原版技能 |
 | 农夫乐事（Farmer's Delight） | 刀、煎锅、西瓜冰棒等武器动作 |
 | 农夫乐事附属 | 樱途旅事、暮色风味乐事、末地乐事、血族乐事、借出乐事的 21 把刀 |
 | 法术与法术书（Farmer's Spell 'n Spellbook） | 4 把刀、汤勺、鸢尾叉、暮光刀锋、魔爪 |
@@ -23,9 +30,7 @@
 
 | 武器 | 动作组 |
 |---|---|
-| 碎肉机 Meat Shredder | `efn:thornwheel`（Ghiza's Wheel） |
 | 歼灭者 / 炼狱熔炉 | `efn:ruinsgreatsword` |
-| 焚化者 | `efn:exsiliumgladius` |
 | Zweiender | `efn:broadblade` |
 | 灵魂撕裂 | `efn:crescentmoon` |
 | 潮汐之爪 + 三款 Gauntlet | `efn:beastclaw` |

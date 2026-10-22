@@ -22,6 +22,8 @@ public class EpicFightMisc {
     public EpicFightMisc(IEventBus modEventBus) {
         // 夜幕缺席时给使用夜幕动作组的武器补一份原生预设（两侧都需要）
         WeaponPresetFallback.register();
+        // 灾变两把武器保留原版右键技能，不被 Epic Fight 的格挡抢占
+        CataclysmUseCompat.register();
         LOGGER.info("[Epic Fight Misc] loaded");
     }
 }
