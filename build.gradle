@@ -109,3 +109,15 @@ idea {
         downloadJavadoc = true
     }
 }
+
+// 每次构建后自动同步到 MY MOD 目录（jar + logo）
+tasks.register('publishToMyMod', Copy) {
+    dependsOn tasks.named('jar')
+    from(tasks.named('jar').flatMap { it.archiveFile })
+    from('logo.png')
+    into(file("${System.getProperty('user.home')}/Documents/Project/MY MOD/${mod_name}"))
+}
+
+tasks.named('build') {
+    finalizedBy 'publishToMyMod'
+}
