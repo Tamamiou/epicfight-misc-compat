@@ -39,7 +39,7 @@
 | 潮汐之爪 + 三款 Gauntlet | `efn:beastclaw` |
 | Brontes / Ceraunus / Astrape | `efn:meenlance` |
 
-未安装夜幕时，这些武器的夜幕动作组不生效，回退为原版攻击方式（其余武器不受影响）。
+未安装夜幕时，这些武器的夜幕动作组不生效，由模组内置的同名预设回退到 Epic Fight 原生动作（拳套 / 巨剑 / 镰刀 / 长矛），不会退化成原版攻击。
 
 ## 构建
 

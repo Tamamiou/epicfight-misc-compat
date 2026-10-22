@@ -25,6 +25,8 @@ public class EpicFightMisc {
         if (FMLEnvironment.dist == Dist.CLIENT) {
             modEventBus.addListener(this::clientSetup);
         }
+        // 夜幕缺席时给灾变武器补一份原生动作（两侧都需要，数据能力在服务端也会解析）
+        WeaponPresetFallback.register();
         LOGGER.info("[Epic Fight Misc] loaded");
     }
 
