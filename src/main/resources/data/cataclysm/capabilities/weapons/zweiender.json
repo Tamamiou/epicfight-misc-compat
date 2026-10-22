@@ -1,10 +1,10 @@
 {
-  "type": "epicfight:greatsword",
+  "type": "efn:broadblade",
   "attributes": {
-    "two_hand": {
-      "impact": 3.8,
+    "common": {
+      "impact": 3.0,
       "armor_negation": 30.0,
-      "max_strikes": 4
+      "max_strikes": 5
     }
   }
 }

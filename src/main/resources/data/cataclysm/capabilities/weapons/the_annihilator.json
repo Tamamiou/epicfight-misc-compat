@@ -1,10 +1,10 @@
 {
-  "type": "epicfight:greatsword",
+  "type": "efn:ruinsgreatsword",
   "attributes": {
-    "two_hand": {
-      "impact": 4.5,
-      "armor_negation": 35.0,
-      "max_strikes": 5
+    "common": {
+      "impact": 5.0,
+      "armor_negation": 45.0,
+      "max_strikes": 7
     }
   }
 }

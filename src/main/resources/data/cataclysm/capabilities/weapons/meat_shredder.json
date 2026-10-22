@@ -1,10 +1,10 @@
 {
-  "type": "epicfight:fist",
+  "type": "efn:thornwheel",
   "attributes": {
     "common": {
-      "impact": 1.5,
-      "armor_negation": 5.0,
-      "max_strikes": 2
+      "impact": 5.0,
+      "armor_negation": 45.0,
+      "max_strikes": 7
     }
   }
 }

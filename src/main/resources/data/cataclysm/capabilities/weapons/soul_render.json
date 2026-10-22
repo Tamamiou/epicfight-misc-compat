@@ -1,10 +1,10 @@
 {
-  "type": "epicfight:greatsword",
+  "type": "efn:crescentmoon",
   "attributes": {
-    "two_hand": {
-      "impact": 3.0,
-      "armor_negation": 20.0,
-      "max_strikes": 3
+    "common": {
+      "impact": 2.5,
+      "armor_negation": 50.0,
+      "max_strikes": 2
     }
   }
 }

@@ -1,10 +1,10 @@
 {
-  "type": "epicfight:trident",
+  "type": "efn:meenlance",
   "attributes": {
-    "one_hand": {
-      "impact": 3.4,
-      "armor_negation": 28.0,
-      "max_strikes": 3
+    "common": {
+      "impact": 2.9,
+      "armor_negation": 40.0,
+      "max_strikes": 5
     }
   }
 }

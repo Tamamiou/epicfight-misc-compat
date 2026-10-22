@@ -1,10 +1,10 @@
 {
-  "type": "epicfight:fist",
+  "type": "efn:beastclaw",
   "attributes": {
     "common": {
       "impact": 2.0,
-      "armor_negation": 12.0,
-      "max_strikes": 3
+      "armor_negation": 30.0,
+      "max_strikes": 5
     }
   }
 }
