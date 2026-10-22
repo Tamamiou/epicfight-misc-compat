@@ -1,0 +1,10 @@
+{
+  "type": "epicfight:hoe",
+  "attributes": {
+    "common": {
+      "impact": 0.9,
+      "armor_negation": 2.0,
+      "max_strikes": 1
+    }
+  }
+}

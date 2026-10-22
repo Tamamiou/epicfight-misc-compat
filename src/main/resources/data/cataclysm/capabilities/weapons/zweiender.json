@@ -1,0 +1,10 @@
+{
+  "type": "epicfight:greatsword",
+  "attributes": {
+    "two_hand": {
+      "impact": 3.8,
+      "armor_negation": 30.0,
+      "max_strikes": 4
+    }
+  }
+}

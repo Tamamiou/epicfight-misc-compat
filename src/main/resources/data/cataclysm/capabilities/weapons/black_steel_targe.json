@@ -1,0 +1,10 @@
+{
+  "type": "epicfight:shield",
+  "attributes": {
+    "common": {
+      "impact": 1.2,
+      "armor_negation": 6.0,
+      "max_strikes": 2
+    }
+  }
+}
